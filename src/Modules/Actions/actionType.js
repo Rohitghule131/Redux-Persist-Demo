@@ -1,0 +1,2 @@
+export const SET_TASK_ACTION = "SET_TASK_ACTION";
+export const UPDATE_TASK_ACTION = "UPDATE_TASK_ACTION";

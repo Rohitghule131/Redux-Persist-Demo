@@ -1,0 +1,10 @@
+.navbar-logo-icon{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.redux-persist{
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+}
