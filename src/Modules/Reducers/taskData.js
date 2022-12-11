@@ -2,13 +2,12 @@ import * as actionType from "../Actions/actionType";
 
 const initialState = [];
 
-export default (state, {data, type}) => {
+export default (state, { data, type }) => {
     state = state || initialState;
-
-    if(type === actionType.SET_TASK_ACTION){
-        let stateData = [...state, ...data];
-        return stateData;
-    } else{
+    console.log([...state],state, data);
+    if (type === actionType.SET_TASK_ACTION) {
+        return data;
+    } else {
         return state;
     }
 };

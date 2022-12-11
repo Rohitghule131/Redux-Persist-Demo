@@ -7,16 +7,12 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import TaskListicon from '../../Assets/Icons/taskIcon.png';
 import './navbar.css'
 import MoreIcon from '@mui/icons-material/MoreVert';
-import { useDispatch, useSelector } from 'react-redux';
-import * as ActionCreator from "../../Modules/Actions";
 
 const pages = ['local Storage', 'session storage'];
 const settings = ['local Storage', 'session storage'];
@@ -24,13 +20,9 @@ const settings = ['local Storage', 'session storage'];
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
-    const dispatch = useDispatch();
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
     };
     
     const handleCloseNavMenu = () => {
@@ -40,21 +32,16 @@ const Navbar = () => {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
-    
-    React.useEffect(()=>{
-        dispatch(ActionCreator.setTaskAction("Hello"));
-    })
 
     return (
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <img className='navbar-logo-icon' src={TaskListicon} />
+                    <img alt='TaskIcon' className='navbar-logo-icon' src={TaskListicon} />
                     <Typography
                         variant="h6"
                         noWrap
-                        component="a"
-                        href="/"
+                        component="p"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -107,8 +94,7 @@ const Navbar = () => {
                     <Typography
                         variant="h5"
                         noWrap
-                        component="a"
-                        href=""
+                        component="p"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },

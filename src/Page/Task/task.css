@@ -1,0 +1,4 @@
+.task-add-and-list-container{
+    display: flex;
+    justify-content: space-around;
+}
