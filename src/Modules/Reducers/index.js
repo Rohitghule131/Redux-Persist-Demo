@@ -5,6 +5,7 @@ const reducer = combineReducers({
     taskList: taskData,
 });
 
+
 const rootReducer = (state, action) => {
   return reducer(state, action);
 };

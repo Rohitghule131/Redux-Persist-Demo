@@ -7,8 +7,8 @@ const TaskForm = () => {
     const [inputValue, setInputValue] = useState("");
     const dispatch = useDispatch();
     const handleSubmit = (e) => {
-        console.log();
         dispatch(ActionCreator.setTaskAction(inputValue));
+        setInputValue("");
     }
     return (
         <div style={{ marginTop: "30px" }}>

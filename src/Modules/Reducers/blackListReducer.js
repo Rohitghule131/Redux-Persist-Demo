@@ -4,13 +4,13 @@ const initialState = {
     arr: []
 };
 
-export default (state = initialState, { data, type }) => {
-    if (type === actionType.SET_TASK_ACTION) {
+export default (state = initialState, {data, type}) => {
+    if (type === actionType.BLACK_LIST_TASK_ACTION) {
         return {
             ...state,
-            arr:[...state.arr, data]
+            arr: [...state.arr, data]
         };
     } else {
         return state;
-    }
+    };
 };

@@ -2,3 +2,9 @@
     display: flex;
     justify-content: space-around;
 }
+
+.task-table-container{
+    max-height: 70vh !important;
+    max-width: 40% !important;
+    overflow: auto;
+}
