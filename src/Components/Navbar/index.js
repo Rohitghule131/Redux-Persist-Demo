@@ -14,8 +14,8 @@ import TaskListicon from '../../Assets/Icons/taskIcon.png';
 import './navbar.css'
 import MoreIcon from '@mui/icons-material/MoreVert';
 
-const pages = ['local Storage', 'session storage'];
-const settings = ['local Storage', 'session storage'];
+const pages = ['local Storage',];
+const settings = ['local Storage',];
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
